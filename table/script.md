@@ -1,4 +1,5 @@
 # table > script (1) functions 
+Documentation detailing key functions for thread creation and script management in GTA scripting.
 ### `create_thread(string name, function func)`
 
 - **Parameters:**
