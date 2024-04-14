@@ -15,7 +15,7 @@ script:yield()
 Pauses script execution for a specified duration, measured in milliseconds.
 
 - **Parameters:**
-- `ms` (integer): The duration to sleep for, in milliseconds.
+  - `ms` (integer): The duration to sleep for, in milliseconds.
 
 
 **Usage:**
