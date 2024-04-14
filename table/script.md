@@ -15,3 +15,18 @@ script.create_thread("THREAD_NAME", function(script)
     -- Add your scripts here, including natives, globals, locals, etc.
 end)
 ```
+### `create_in_fiber(function func)`
+
+- **Parameters:**
+  - `func` (function): Function executed once within the fiber pool for efficient thread management.
+
+- **Description:**
+  Executes a function once in the fiber pool, allowing the use of natives and script utils such as yielding or sleeping.
+
+- **Usage:**
+```lua
+script.create_in_fiber(function (script)
+     -- Yielding until the next frame.
+     script:yield()
+end)
+```
