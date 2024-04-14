@@ -12,7 +12,7 @@ Documentation detailing key functions for tool management, including useful func
 
 - **Usage:**
 ```lua
- tools.send_log("title", "message")
+ tool.send_log("title", "message")
 ```
 
 ### `send_log(int color, string title, string message)`
@@ -27,7 +27,7 @@ Documentation detailing key functions for tool management, including useful func
 
 - **Usage:**
 ```lua
-tools.send_log(log_color.yellow, "title", "message")
+tool.send_log(log_color.yellow, "title", "message")
 ```
 
 ### `send_notify(string title, string message)`
@@ -41,7 +41,7 @@ tools.send_log(log_color.yellow, "title", "message")
 
 - **Usage:**
 ```lua
-tools.send_notify("title", "message")
+tool.send_notify("title", "message")
 ```
 
 ### `send_notify_log(string title, string message)`
@@ -55,13 +55,13 @@ tools.send_notify("title", "message")
 
 - **Usage:**
 ```lua
-tools.send_notify_log("title", "message")
+tool.send_notify_log("title", "message")
 ```
 
-### `joaat(string string)`
+### `joaat(string text)`
 
 - **Parameters:**
-  - `string` (string): The input string for which the Jenkins One At A Time (JOAAT) hash will be calculated.
+  - `text` (string): The input string for which the Jenkins One At A Time (JOAAT) hash will be calculated.
 
 - **Returns:**
   - int
@@ -71,7 +71,7 @@ tools.send_notify_log("title", "message")
 
 - **Usage:**
 ```lua
-local hash = tools.joaat("string")
+local hash = tool.joaat("string")
 ```
 
 ### `to_string(int value)`
@@ -87,5 +87,5 @@ local hash = tools.joaat("string")
 
 - **Usage:**
 ```lua
-local string = tools.to_string(123)
+local string = tool.to_string(123)
 ```
